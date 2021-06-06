@@ -10,11 +10,17 @@ namespace WindowsFormsApp3
 
     public class Akdeniz : IDiyet
     {
-        public string DiyetVer()
+       
+        public string DiyetVer() //Main Creator
+        {
+            return this.DiyetAkdeniz();
+        }
+
+        private string DiyetAkdeniz() 
         {
             return "Akdeniz";
         }
-  
+
         //public  List<string> DiyetOgun()
         //{
         //    List<string> AkdenizDiyet = new List<string>();

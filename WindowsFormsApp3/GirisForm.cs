@@ -25,8 +25,16 @@ namespace WindowsFormsApp3
             string kullaniciAdi = txtKullaniciID.Text;
             string sifre = txtSifre.Text;
             _connection.Open();
-            SqlDataAdapter komut = new SqlDataAdapter("select * from Kullanicilar where KullaniciID = '" + kullaniciAdi + "' and KullaniciSifre='" + sifre + "'", _connection);
-            DataTable dt = new System.Data.DataTable();
+            
+            if (_connection.State == ConnectionState.Open)
+            {
+                MessageBox.Show("Test");
+            }
+
+
+             SqlDataAdapter komut = new SqlDataAdapter("select * from Kullanicilar where KullaniciID = '" + kullaniciAdi + "' and KullaniciSifre='" + sifre + "'", _connection);
+           // SqlDataAdapter komut = new SqlDataAdapter("SELECT * FROM ogrenci", _connection);
+            DataTable dt = new DataTable();
             komut.Fill(dt);
             // string kullaniciTur = dt.Rows[0]["KullaniciTur"].ToString();
             //  MessageBox.Show(kullaniciTur);
@@ -62,6 +70,16 @@ namespace WindowsFormsApp3
             else
                 MessageBox.Show("Kullanıcı adı ya da şifre yanlış");
             _connection.Close();
+        }
+
+        private void GirisForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

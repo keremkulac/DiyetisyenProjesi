@@ -8,9 +8,16 @@ namespace WindowsFormsApp3
 {
     public class GlutenFree : IDiyet
     {
+        
+
         public string DiyetVer()
         {
-            return "Glutenfree";
+            return this.DiyetGluten();
+        }
+
+        private string DiyetGluten()
+        {
+            return "GlutenFree";
         }
     }
 }

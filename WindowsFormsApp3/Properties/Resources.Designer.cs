@@ -63,6 +63,16 @@ namespace WindowsFormsApp3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap black_material_ui_background_by_ministerkraft_dddraqt_fullview {
+            get {
+                object obj = ResourceManager.GetObject("black_material_ui_background_by_ministerkraft_dddraqt-fullview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancel__2_ {
             get {
                 object obj = ResourceManager.GetObject("cancel (2)", resourceCulture);
@@ -76,6 +86,16 @@ namespace WindowsFormsApp3.Properties {
         internal static System.Drawing.Bitmap cancel__3_ {
             get {
                 object obj = ResourceManager.GetObject("cancel (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

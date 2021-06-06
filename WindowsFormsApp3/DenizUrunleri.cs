@@ -8,9 +8,16 @@ namespace WindowsFormsApp3
 {
     public class DenizUrunleri : IDiyet
     {
+        
+
         public string DiyetVer()
         {
-            return "Deniz ürünleri";
+            return this.DiyetDenizUrunleri();
+        }
+
+        private string DiyetDenizUrunleri()
+        {
+            return "Deniz Ürünleri";
         }
     }
 }

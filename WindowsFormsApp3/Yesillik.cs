@@ -10,6 +10,11 @@ namespace WindowsFormsApp3
     {
         public string DiyetVer()
         {
+            return this.DiyetYesillik();
+        }
+
+        private string DiyetYesillik()
+        {
             return "Yeşillik";
         }
     }
