@@ -131,5 +131,11 @@
   <ItemGroup>
     <None Include="Resources\cancel %283%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black_material_ui_background_by_ministerkraft_dddraqt-fullview.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

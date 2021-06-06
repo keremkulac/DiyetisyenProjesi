@@ -38,12 +38,24 @@ namespace WindowsFormsApp3
             hasta.TelNo = Convert.ToInt64(txtTelNo.Text);
         }
 
-        private void btnKaydet_Click(object sender, EventArgs e)
+        private void btnGeri_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            GirisForm giris = new GirisForm();
+            giris.Show();
+        }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void lblKaydet_Click(object sender, EventArgs e)
         {
             HastaKayitAl();
             DiyetFabrikasi diyetFabrika = new DiyetFabrikasi();
             IDiyet diyet = diyetFabrika.diyetOlustur(hasta.HastalikAdi);
-           
+
             hastaKayit.HastaEkle(new HastaKayit()
             {
                 HastalikAdi = cmbHastalikAd.Text,
@@ -58,20 +70,6 @@ namespace WindowsFormsApp3
             });
             temizle();
             MessageBox.Show("Kayıt başarılı...");
-        }
-
- 
-
-        private void btnGeri_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            GirisForm giris = new GirisForm();
-            giris.Show();
-        }
-
-        private void btnCikis_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

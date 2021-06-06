@@ -63,6 +63,16 @@ namespace WindowsFormsApp3
                 MessageBox.Show("Kullanıcı adı ya da şifre yanlış");
             _connection.Close();
         }
+
+        private void GirisForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
