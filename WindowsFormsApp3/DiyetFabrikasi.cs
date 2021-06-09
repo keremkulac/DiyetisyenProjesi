@@ -14,7 +14,8 @@ namespace WindowsFormsApp3
     {
         public IDiyet diyetOlustur(string hastalikAdi)
         {
-            IDiyet diyet = null;
+             IDiyet diyet = null;
+            
             if (hastalikAdi == "Obez")
             {
                 diyet = new Yesillik();
@@ -26,6 +27,8 @@ namespace WindowsFormsApp3
             else if (hastalikAdi == "Şeker")
             {
                 diyet = new Akdeniz();
+                GerekenDiyetListesi = new AkdenizDiyetListesi();
+
             }
             return diyet;
         }

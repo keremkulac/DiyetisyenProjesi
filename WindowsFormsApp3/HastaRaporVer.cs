@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 
 
+
 namespace WindowsFormsApp3
 {
 
@@ -54,11 +55,15 @@ namespace WindowsFormsApp3
 
             if (cmbDosyaTuru.Text=="HTML")
             {
-                for (int i = 1; i < secilenHastaOzellikleri.Length; i++)
-                {
-                    MessageBox.Show("Hasta :" + secilenHastaOzellikleri[i]);
+                
+                HastalariHtmlKaydet();
 
-                }
+                 
+                //for (int i = 1; i < secilenHastaOzellikleri.Length; i++)
+                //{
+                //    MessageBox.Show("Hasta :" + secilenHastaOzellikleri[i]);
+
+                //}
             }
 
             else if (cmbDosyaTuru.Text == "JSON")
@@ -67,10 +72,41 @@ namespace WindowsFormsApp3
             }
         }
 
+     
+
         public void HastalariHtmlKaydet()
         {
+            string hastaadi = secilenHastaOzellikleri[1];
+            MessageBox.Show("HASTA ADI TEST : "+hastaadi);
+            string exePath =
+        System.IO.Path.GetDirectoryName(
+           System.Reflection.Assembly.GetEntryAssembly().Location);
+            string dosya_yolu = exePath+ "\\"+hastaadi+".html";
 
 
+            FileStream fs = new FileStream(dosya_yolu, FileMode.OpenOrCreate, FileAccess.Write);
+            StreamWriter sw = new StreamWriter(fs);
+            //Yazma işlemi için bir StreamWriter nesnesi oluşturduk.
+            sw.WriteLine("<center> <hr> <b> DİYETİSYEN RAPORU </b> </hr> </center> ");
+
+
+            sw.WriteLine("<b> HASTA ADI: </b> "+hastaadi+ "<br>");
+            sw.WriteLine("<b> HASTA SOYADI: </b> "+ secilenHastaOzellikleri[2] + "<br>");
+            sw.WriteLine("<b> HASTALIK: </b> "+ secilenHastaOzellikleri[3] + "<br>");
+            sw.WriteLine("<b> YAŞ: </b> "+ secilenHastaOzellikleri[4] + "<br>");
+            sw.WriteLine("<b> KİLO: </b> "+ secilenHastaOzellikleri[5] + "<br>");
+            sw.WriteLine("<b> TC NO: </b> "+ secilenHastaOzellikleri[6] + "<br>");
+            sw.WriteLine("<b> Tel No: </b> "+ secilenHastaOzellikleri[7] + "<br>");
+            sw.WriteLine("<b> Diyet: </b> "+ secilenHastaOzellikleri[8] + "<br>");
+            sw.WriteLine("<b> Diyet Tarihi: </b> "+ secilenHastaOzellikleri[9] + "<br>");
+
+            sw.WriteLine("<center> <hr> <b> RAPORU ÇIKTI ALMAK İÇİN CTRL+F YAPABİLİRSİNİZ. GEÇMİŞ OLSUN.  </b> </hr> </center> ");
+
+            //Dosyaya ekleyeceğimiz iki satırlık yazıyı WriteLine() metodu ile yazacağız.
+            sw.Flush();
+            //Veriyi tampon bölgeden dosyaya aktardık.
+            sw.Close();
+            fs.Close();
         }
 
         private void dtHastalar_SelectionChanged(object sender, EventArgs e)

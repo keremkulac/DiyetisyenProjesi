@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp3
 {
-    public interface IDiyet
+    class DiyetListeleri
     {
 
-
-        string DiyetVer();
-        //// SortedList<string, string> SabahOgun();
-       
+        public string[] DiyetListesiString { get; set; }
     }
 }

@@ -66,6 +66,7 @@ namespace WindowsFormsApp3
                 TC = Convert.ToInt64(txtTC.Text),
                 TelNo = Convert.ToInt64(txtTelNo.Text),
                 DiyetTipi = diyet.DiyetVer(),
+               
                 Tarih = dateTimePicker1.Value.ToString("MM/dd/yyyy")
             });
             temizle();

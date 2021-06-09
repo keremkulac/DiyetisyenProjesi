@@ -27,6 +27,15 @@ namespace WindowsFormsApp3
         public int Yas { get; set; }
         public int Kilo { get; set; }
         public string DiyetTipi { get; set; }
+
+
+        //[ThreadStatic] private static List<string> _myList;
+
+        //public static List<string> DiyetListesi
+        //{
+        //    get { return _myList; }
+        //    set { _myList = value; }
+        //}
         public string Tarih { get; set; }
     }
 }

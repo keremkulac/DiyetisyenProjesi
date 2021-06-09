@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Akdeniz.cs" />
+    <Compile Include="AkdenizDiyetListesi.cs" />
     <Compile Include="DenizUrunleri.cs" />
     <Compile Include="DiyetFabrikasi.cs" />
     <Compile Include="DiyetisyenKayit.cs" />
@@ -60,6 +61,7 @@
       <DependentUpon>DiyetisyenKayitForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DiyetisyenVeriTabani.cs" />
+    <Compile Include="DiyetListeleri.cs" />
     <Compile Include="GirisForm.cs">
       <SubType>Form</SubType>
     </Compile>
