@@ -46,19 +46,17 @@ namespace WindowsFormsApp3
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblKaydet = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnRaporVer = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnGeri = new System.Windows.Forms.PictureBox();
-            this.btnRaporVer = new System.Windows.Forms.Button();
-            this.cmbDosyaTuru = new System.Windows.Forms.ComboBox();
-            this.lblDosyaTuru = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGeri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // lblAd
@@ -219,16 +217,6 @@ namespace WindowsFormsApp3
             this.dateTimePicker1.Size = new System.Drawing.Size(146, 35);
             this.dateTimePicker1.TabIndex = 7;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::WindowsFormsApp3.Properties.Resources.download;
-            this.pictureBox3.Location = new System.Drawing.Point(188, 243);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 38;
-            this.pictureBox3.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -258,6 +246,16 @@ namespace WindowsFormsApp3
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Kişisel Bilgi";
             // 
+            // btnRaporVer
+            // 
+            this.btnRaporVer.Location = new System.Drawing.Point(671, 92);
+            this.btnRaporVer.Name = "btnRaporVer";
+            this.btnRaporVer.Size = new System.Drawing.Size(292, 63);
+            this.btnRaporVer.TabIndex = 38;
+            this.btnRaporVer.Text = "RAPOR VER";
+            this.btnRaporVer.UseVisualStyleBackColor = true;
+            this.btnRaporVer.Click += new System.EventHandler(this.btnRaporVer_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -282,34 +280,15 @@ namespace WindowsFormsApp3
             this.btnGeri.TabStop = false;
             this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
             // 
-            // btnRaporVer
+            // pictureBox3
             // 
-            this.btnRaporVer.Location = new System.Drawing.Point(684, 244);
-            this.btnRaporVer.Name = "btnRaporVer";
-            this.btnRaporVer.Size = new System.Drawing.Size(292, 63);
-            this.btnRaporVer.TabIndex = 38;
-            this.btnRaporVer.Text = "Rapor Ver";
-            this.btnRaporVer.UseVisualStyleBackColor = true;
-            // 
-            // cmbDosyaTuru
-            // 
-            this.cmbDosyaTuru.FormattingEnabled = true;
-            this.cmbDosyaTuru.Items.AddRange(new object[] {
-            "HTML",
-            "JSON"});
-            this.cmbDosyaTuru.Location = new System.Drawing.Point(796, 183);
-            this.cmbDosyaTuru.Name = "cmbDosyaTuru";
-            this.cmbDosyaTuru.Size = new System.Drawing.Size(180, 30);
-            this.cmbDosyaTuru.TabIndex = 39;
-            // 
-            // lblDosyaTuru
-            // 
-            this.lblDosyaTuru.AutoSize = true;
-            this.lblDosyaTuru.Location = new System.Drawing.Point(680, 190);
-            this.lblDosyaTuru.Name = "lblDosyaTuru";
-            this.lblDosyaTuru.Size = new System.Drawing.Size(110, 22);
-            this.lblDosyaTuru.TabIndex = 40;
-            this.lblDosyaTuru.Text = "Dosya Türü:";
+            this.pictureBox3.Image = global::WindowsFormsApp3.Properties.Resources.download;
+            this.pictureBox3.Location = new System.Drawing.Point(188, 243);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 38;
+            this.pictureBox3.TabStop = false;
             // 
             // HastaKayitForm
             // 
@@ -317,8 +296,6 @@ namespace WindowsFormsApp3
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(988, 559);
-            this.Controls.Add(this.lblDosyaTuru);
-            this.Controls.Add(this.cmbDosyaTuru);
             this.Controls.Add(this.btnRaporVer);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnGeri);
@@ -330,13 +307,14 @@ namespace WindowsFormsApp3
             this.Name = "HastaKayitForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hasta Kayıt Form";
+            this.Load += new System.EventHandler(this.HastaKayitForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGeri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,8 +345,6 @@ namespace WindowsFormsApp3
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblKaydet;
         private System.Windows.Forms.Button btnRaporVer;
-        private System.Windows.Forms.ComboBox cmbDosyaTuru;
-        private System.Windows.Forms.Label lblDosyaTuru;
     }
 }
 

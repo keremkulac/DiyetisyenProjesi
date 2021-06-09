@@ -39,5 +39,22 @@ namespace WindowsFormsApp3
             command.ExecuteNonQuery();
             _connection.Close();
         }
+
+
+        public DataSet HastaCek()
+        {
+            ConnectionControl();
+            string sorgu = "SELECT* FROM Hastalar";
+            SqlDataAdapter da = new SqlDataAdapter(sorgu, _connection);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            _connection.Close();
+            return ds;
+        }
+
+
+
+
+
     }
 }
