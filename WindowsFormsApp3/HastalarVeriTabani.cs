@@ -52,7 +52,16 @@ namespace WindowsFormsApp3
             return ds;
         }
 
-
+        public DataSet HastaOgunleriCek(string tcNo)
+        {
+            ConnectionControl();
+            string sorgu = "SELECT* FROM Ogun where HastaTCNo = '" + tcNo + "' ";
+            SqlDataAdapter da = new SqlDataAdapter(sorgu, _connection);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            _connection.Close();
+            return ds;
+        }
 
 
 

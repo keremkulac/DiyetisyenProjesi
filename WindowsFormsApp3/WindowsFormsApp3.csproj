@@ -97,6 +97,7 @@
     <Compile Include="GirisForm.Designer.cs">
       <DependentUpon>GirisForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="HastaCek.cs" />
     <Compile Include="HastalarVeriTabani.cs" />
     <Compile Include="IDiyet.cs" />
     <Compile Include="GlutenFree.cs" />
@@ -195,6 +196,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\download_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more_than_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more_than_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
