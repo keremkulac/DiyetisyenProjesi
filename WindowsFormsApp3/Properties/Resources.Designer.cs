@@ -63,6 +63,16 @@ namespace WindowsFormsApp3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bacground_min {
+            get {
+                object obj = ResourceManager.GetObject("bacground-min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap black_material_ui_background_by_ministerkraft_dddraqt_fullview {
             get {
                 object obj = ResourceManager.GetObject("black_material_ui_background_by_ministerkraft_dddraqt-fullview", resourceCulture);
@@ -96,6 +106,46 @@ namespace WindowsFormsApp3.Properties {
         internal static System.Drawing.Bitmap download {
             get {
                 object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download_32px {
+            get {
+                object obj = ResourceManager.GetObject("download_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download_32px1 {
+            get {
+                object obj = ResourceManager.GetObject("download_32px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_curved_arrow_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-curved-arrow-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_document_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-document-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

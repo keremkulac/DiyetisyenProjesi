@@ -26,12 +26,6 @@ namespace WindowsFormsApp3
             string sifre = txtSifre.Text;
             _connection.Open();
             
-            if (_connection.State == ConnectionState.Open)
-            {
-                MessageBox.Show("Test");
-            }
-
-
              SqlDataAdapter komut = new SqlDataAdapter("select * from Kullanicilar where KullaniciID = '" + kullaniciAdi + "' and KullaniciSifre='" + sifre + "'", _connection);
            // SqlDataAdapter komut = new SqlDataAdapter("SELECT * FROM ogrenci", _connection);
             DataTable dt = new DataTable();
@@ -70,16 +64,6 @@ namespace WindowsFormsApp3
             else
                 MessageBox.Show("Kullanıcı adı ya da şifre yanlış");
             _connection.Close();
-        }
-
-        private void GirisForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

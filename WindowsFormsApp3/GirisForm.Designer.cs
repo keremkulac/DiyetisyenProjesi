@@ -90,14 +90,13 @@ namespace WindowsFormsApp3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label3.Location = new System.Drawing.Point(115, 25);
+            this.label3.Location = new System.Drawing.Point(110, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 33);
+            this.label3.Size = new System.Drawing.Size(99, 36);
             this.label3.TabIndex = 7;
             this.label3.Text = "GİRİŞ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblGirisYap
             // 
@@ -151,7 +150,7 @@ namespace WindowsFormsApp3
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.black_material_ui_background_by_ministerkraft_dddraqt_fullview;
+            this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.bacground_min;
             this.ClientSize = new System.Drawing.Size(320, 350);
             this.Controls.Add(this.lblGirisYap);
             this.Controls.Add(this.pictureBox3);
@@ -168,7 +167,6 @@ namespace WindowsFormsApp3
             this.Name = "GirisForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GirisForm";
-            this.Load += new System.EventHandler(this.GirisForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

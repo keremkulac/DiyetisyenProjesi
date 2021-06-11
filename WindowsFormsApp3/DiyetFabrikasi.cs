@@ -27,7 +27,7 @@ namespace WindowsFormsApp3
             else if (hastalikAdi == "Şeker")
             {
                 diyet = new Akdeniz();
-                GerekenDiyetListesi = new AkdenizDiyetListesi();
+               // GerekenDiyetListesi = new AkdenizDiyetListesi();
 
             }
             return diyet;

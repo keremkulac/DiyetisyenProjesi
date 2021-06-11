@@ -48,12 +48,17 @@ namespace WindowsFormsApp3
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnRaporVer = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblRaporVer = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnGeri = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGeri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -64,7 +69,7 @@ namespace WindowsFormsApp3
             this.lblAd.AutoSize = true;
             this.lblAd.Location = new System.Drawing.Point(16, 61);
             this.lblAd.Name = "lblAd";
-            this.lblAd.Size = new System.Drawing.Size(41, 27);
+            this.lblAd.Size = new System.Drawing.Size(33, 21);
             this.lblAd.TabIndex = 0;
             this.lblAd.Text = "Ad";
             // 
@@ -72,14 +77,14 @@ namespace WindowsFormsApp3
             // 
             this.txtAd.Location = new System.Drawing.Point(162, 54);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(131, 35);
+            this.txtAd.Size = new System.Drawing.Size(131, 29);
             this.txtAd.TabIndex = 0;
             // 
             // txtSoyad
             // 
             this.txtSoyad.Location = new System.Drawing.Point(162, 101);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(131, 35);
+            this.txtSoyad.Size = new System.Drawing.Size(131, 29);
             this.txtSoyad.TabIndex = 1;
             // 
             // lblSoyad
@@ -87,7 +92,7 @@ namespace WindowsFormsApp3
             this.lblSoyad.AutoSize = true;
             this.lblSoyad.Location = new System.Drawing.Point(16, 104);
             this.lblSoyad.Name = "lblSoyad";
-            this.lblSoyad.Size = new System.Drawing.Size(71, 27);
+            this.lblSoyad.Size = new System.Drawing.Size(58, 21);
             this.lblSoyad.TabIndex = 2;
             this.lblSoyad.Text = "Soyad";
             // 
@@ -96,7 +101,7 @@ namespace WindowsFormsApp3
             this.lblTC.AutoSize = true;
             this.lblTC.Location = new System.Drawing.Point(16, 151);
             this.lblTC.Name = "lblTC";
-            this.lblTC.Size = new System.Drawing.Size(148, 27);
+            this.lblTC.Size = new System.Drawing.Size(116, 21);
             this.lblTC.TabIndex = 4;
             this.lblTC.Text = "TC Kimlik No";
             // 
@@ -105,7 +110,7 @@ namespace WindowsFormsApp3
             this.lblHastalikAdi.AutoSize = true;
             this.lblHastalikAdi.Location = new System.Drawing.Point(15, 55);
             this.lblHastalikAdi.Name = "lblHastalikAdi";
-            this.lblHastalikAdi.Size = new System.Drawing.Size(134, 27);
+            this.lblHastalikAdi.Size = new System.Drawing.Size(105, 21);
             this.lblHastalikAdi.TabIndex = 6;
             this.lblHastalikAdi.Text = "Hastalık Tipi";
             // 
@@ -118,7 +123,7 @@ namespace WindowsFormsApp3
             "Şeker"});
             this.cmbHastalikAd.Location = new System.Drawing.Point(135, 52);
             this.cmbHastalikAd.Name = "cmbHastalikAd";
-            this.cmbHastalikAd.Size = new System.Drawing.Size(119, 35);
+            this.cmbHastalikAd.Size = new System.Drawing.Size(119, 29);
             this.cmbHastalikAd.TabIndex = 4;
             // 
             // lblTelNo
@@ -126,7 +131,7 @@ namespace WindowsFormsApp3
             this.lblTelNo.AutoSize = true;
             this.lblTelNo.Location = new System.Drawing.Point(16, 198);
             this.lblTelNo.Name = "lblTelNo";
-            this.lblTelNo.Size = new System.Drawing.Size(182, 27);
+            this.lblTelNo.Size = new System.Drawing.Size(143, 21);
             this.lblTelNo.TabIndex = 8;
             this.lblTelNo.Text = "Telefon Numarası";
             // 
@@ -135,7 +140,7 @@ namespace WindowsFormsApp3
             this.txtTC.Location = new System.Drawing.Point(162, 148);
             this.txtTC.Mask = "00000000000";
             this.txtTC.Name = "txtTC";
-            this.txtTC.Size = new System.Drawing.Size(100, 35);
+            this.txtTC.Size = new System.Drawing.Size(131, 29);
             this.txtTC.TabIndex = 2;
             // 
             // txtTelNo
@@ -143,14 +148,14 @@ namespace WindowsFormsApp3
             this.txtTelNo.Location = new System.Drawing.Point(162, 195);
             this.txtTelNo.Mask = "00000000000";
             this.txtTelNo.Name = "txtTelNo";
-            this.txtTelNo.Size = new System.Drawing.Size(100, 35);
+            this.txtTelNo.Size = new System.Drawing.Size(131, 29);
             this.txtTelNo.TabIndex = 3;
             // 
             // txtYas
             // 
-            this.txtYas.Location = new System.Drawing.Point(135, 102);
+            this.txtYas.Location = new System.Drawing.Point(135, 101);
             this.txtYas.Name = "txtYas";
-            this.txtYas.Size = new System.Drawing.Size(55, 35);
+            this.txtYas.Size = new System.Drawing.Size(55, 29);
             this.txtYas.TabIndex = 5;
             // 
             // label2
@@ -158,7 +163,7 @@ namespace WindowsFormsApp3
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(15, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 27);
+            this.label2.Size = new System.Drawing.Size(37, 21);
             this.label2.TabIndex = 30;
             this.label2.Text = "Yaş";
             // 
@@ -166,7 +171,7 @@ namespace WindowsFormsApp3
             // 
             this.txtKilo.Location = new System.Drawing.Point(135, 149);
             this.txtKilo.Name = "txtKilo";
-            this.txtKilo.Size = new System.Drawing.Size(55, 35);
+            this.txtKilo.Size = new System.Drawing.Size(55, 29);
             this.txtKilo.TabIndex = 6;
             // 
             // label3
@@ -174,7 +179,7 @@ namespace WindowsFormsApp3
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(15, 152);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 27);
+            this.label3.Size = new System.Drawing.Size(41, 21);
             this.label3.TabIndex = 32;
             this.label3.Text = "Kilo";
             // 
@@ -184,16 +189,16 @@ namespace WindowsFormsApp3
             this.groupBox1.Controls.Add(this.lblKaydet);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.pictureBox3);
+            this.groupBox1.Controls.Add(this.txtYas);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.lblHastalikAdi);
             this.groupBox1.Controls.Add(this.txtKilo);
             this.groupBox1.Controls.Add(this.cmbHastalikAd);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtYas);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox1.Location = new System.Drawing.Point(348, 82);
+            this.groupBox1.Location = new System.Drawing.Point(348, 73);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(317, 277);
             this.groupBox1.TabIndex = 33;
@@ -203,9 +208,9 @@ namespace WindowsFormsApp3
             // lblKaydet
             // 
             this.lblKaydet.AutoSize = true;
-            this.lblKaydet.Location = new System.Drawing.Point(218, 246);
+            this.lblKaydet.Location = new System.Drawing.Point(222, 246);
             this.lblKaydet.Name = "lblKaydet";
-            this.lblKaydet.Size = new System.Drawing.Size(82, 27);
+            this.lblKaydet.Size = new System.Drawing.Size(63, 21);
             this.lblKaydet.TabIndex = 8;
             this.lblKaydet.Text = "Kaydet";
             this.lblKaydet.Click += new System.EventHandler(this.lblKaydet_Click);
@@ -214,7 +219,7 @@ namespace WindowsFormsApp3
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(135, 202);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(146, 35);
+            this.dateTimePicker1.Size = new System.Drawing.Size(146, 29);
             this.dateTimePicker1.TabIndex = 7;
             // 
             // label1
@@ -222,7 +227,7 @@ namespace WindowsFormsApp3
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(15, 202);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 27);
+            this.label1.Size = new System.Drawing.Size(48, 21);
             this.label1.TabIndex = 37;
             this.label1.Text = "Tarih";
             // 
@@ -239,28 +244,52 @@ namespace WindowsFormsApp3
             this.groupBox2.Controls.Add(this.lblTelNo);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox2.Location = new System.Drawing.Point(12, 82);
+            this.groupBox2.Location = new System.Drawing.Point(12, 73);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(330, 277);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Kişisel Bilgi";
             // 
-            // btnRaporVer
+            // groupBox3
             // 
-            this.btnRaporVer.Location = new System.Drawing.Point(671, 92);
-            this.btnRaporVer.Name = "btnRaporVer";
-            this.btnRaporVer.Size = new System.Drawing.Size(292, 63);
-            this.btnRaporVer.TabIndex = 38;
-            this.btnRaporVer.Text = "RAPOR VER";
-            this.btnRaporVer.UseVisualStyleBackColor = true;
-            this.btnRaporVer.Click += new System.EventHandler(this.btnRaporVer_Click);
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.lblRaporVer);
+            this.groupBox3.Controls.Add(this.pictureBox2);
+            this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox3.Location = new System.Drawing.Point(671, 73);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(230, 125);
+            this.groupBox3.TabIndex = 39;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Rapor";
+            // 
+            // lblRaporVer
+            // 
+            this.lblRaporVer.AutoSize = true;
+            this.lblRaporVer.Location = new System.Drawing.Point(46, 57);
+            this.lblRaporVer.Name = "lblRaporVer";
+            this.lblRaporVer.Size = new System.Drawing.Size(156, 21);
+            this.lblRaporVer.TabIndex = 40;
+            this.lblRaporVer.Text = "Rapor Ekranına Git";
+            this.lblRaporVer.Click += new System.EventHandler(this.lblRaporVer_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WindowsFormsApp3.Properties.Resources.icons8_curved_arrow_32;
+            this.pictureBox2.Location = new System.Drawing.Point(8, 47);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 41;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::WindowsFormsApp3.Properties.Resources.cancel__3_;
-            this.pictureBox1.Location = new System.Drawing.Point(641, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(877, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -282,21 +311,35 @@ namespace WindowsFormsApp3
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::WindowsFormsApp3.Properties.Resources.download;
-            this.pictureBox3.Location = new System.Drawing.Point(188, 243);
+            this.pictureBox3.Image = global::WindowsFormsApp3.Properties.Resources.download_32px1;
+            this.pictureBox3.Location = new System.Drawing.Point(184, 239);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 38;
             this.pictureBox3.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(160)))), ((int)(((byte)(197)))));
+            this.label4.Location = new System.Drawing.Point(265, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(380, 36);
+            this.label4.TabIndex = 40;
+            this.label4.Text = "HASTA BİLGİLERİ KAYIT";
+            // 
             // HastaKayitForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(988, 559);
-            this.Controls.Add(this.btnRaporVer);
+            this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.black_material_ui_background_by_ministerkraft_dddraqt_fullview;
+            this.ClientSize = new System.Drawing.Size(912, 410);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.groupBox2);
@@ -307,11 +350,13 @@ namespace WindowsFormsApp3
             this.Name = "HastaKayitForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hasta Kayıt Form";
-            this.Load += new System.EventHandler(this.HastaKayitForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGeri)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -344,7 +389,10 @@ namespace WindowsFormsApp3
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblKaydet;
-        private System.Windows.Forms.Button btnRaporVer;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label lblRaporVer;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label4;
     }
 }
 

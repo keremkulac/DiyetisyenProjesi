@@ -73,15 +73,11 @@ namespace WindowsFormsApp3
             MessageBox.Show("Kayıt başarılı...");
         }
 
-        private void btnRaporVer_Click(object sender, EventArgs e)
+        private void lblRaporVer_Click(object sender, EventArgs e)
         {
-            HastaRaporVer hst = new HastaRaporVer();
-            hst.Show();
-        }
-
-        private void HastaKayitForm_Load(object sender, EventArgs e)
-        {
-
+            this.Close();
+            HastaRaporVer hastaRapor = new HastaRaporVer();
+            hastaRapor.Show();
         }
     }
 }
