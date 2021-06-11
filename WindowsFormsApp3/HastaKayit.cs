@@ -20,22 +20,15 @@ namespace WindowsFormsApp3
             get { return soyad; }
             set { soyad = value.ToUpper(); }
         }
-        public long TC { get; set; }
         public string HastalikAdi { get; set; }
-        public long TelNo { get; set; }
-
         public int Yas { get; set; }
         public int Kilo { get; set; }
-        public string DiyetTipi { get; set; }
-
-
-        //[ThreadStatic] private static List<string> _myList;
-
-        //public static List<string> DiyetListesi
-        //{
-        //    get { return _myList; }
-        //    set { _myList = value; }
-        //}
+        public long TC { get; set; }
+        public long TelNo { get; set; }
         public string Tarih { get; set; }
+        public string DiyetTipi { get; set; }
+        public string Sabah { get; internal set; }
+        public string Ogle { get; internal set; }
+        public string Aksam { get; internal set; }
     }
 }

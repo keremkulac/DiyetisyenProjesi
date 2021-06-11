@@ -52,7 +52,7 @@ namespace WindowsFormsApp3
             this.label1.Location = new System.Drawing.Point(44, 96);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 21);
+            this.label1.Size = new System.Drawing.Size(139, 27);
             this.label1.TabIndex = 5;
             this.label1.Text = "Kullanıcı Adı";
             // 
@@ -65,7 +65,7 @@ namespace WindowsFormsApp3
             this.label2.Location = new System.Drawing.Point(44, 171);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 21);
+            this.label2.Size = new System.Drawing.Size(57, 27);
             this.label2.TabIndex = 6;
             this.label2.Text = "Şifre";
             // 
@@ -75,7 +75,7 @@ namespace WindowsFormsApp3
             this.txtSifre.Location = new System.Drawing.Point(48, 203);
             this.txtSifre.Margin = new System.Windows.Forms.Padding(4);
             this.txtSifre.Name = "txtSifre";
-            this.txtSifre.Size = new System.Drawing.Size(197, 26);
+            this.txtSifre.Size = new System.Drawing.Size(197, 30);
             this.txtSifre.TabIndex = 2;
             // 
             // txtKullaniciID
@@ -83,7 +83,7 @@ namespace WindowsFormsApp3
             this.txtKullaniciID.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtKullaniciID.Location = new System.Drawing.Point(48, 130);
             this.txtKullaniciID.Name = "txtKullaniciID";
-            this.txtKullaniciID.Size = new System.Drawing.Size(197, 26);
+            this.txtKullaniciID.Size = new System.Drawing.Size(197, 30);
             this.txtKullaniciID.TabIndex = 1;
             // 
             // label3
@@ -94,7 +94,7 @@ namespace WindowsFormsApp3
             this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label3.Location = new System.Drawing.Point(110, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 36);
+            this.label3.Size = new System.Drawing.Size(123, 46);
             this.label3.TabIndex = 7;
             this.label3.Text = "GİRİŞ";
             // 
@@ -107,7 +107,7 @@ namespace WindowsFormsApp3
             this.lblGirisYap.Location = new System.Drawing.Point(166, 264);
             this.lblGirisYap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGirisYap.Name = "lblGirisYap";
-            this.lblGirisYap.Size = new System.Drawing.Size(79, 21);
+            this.lblGirisYap.Size = new System.Drawing.Size(101, 27);
             this.lblGirisYap.TabIndex = 3;
             this.lblGirisYap.Text = "Giriş Yap";
             this.lblGirisYap.Click += new System.EventHandler(this.lblGirisYap_Click);
@@ -147,7 +147,7 @@ namespace WindowsFormsApp3
             // 
             // GirisForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.bacground_min;
@@ -167,6 +167,7 @@ namespace WindowsFormsApp3
             this.Name = "GirisForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GirisForm";
+            this.Load += new System.EventHandler(this.GirisForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

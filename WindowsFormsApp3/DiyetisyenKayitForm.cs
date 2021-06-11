@@ -71,5 +71,15 @@ namespace WindowsFormsApp3
             dtKullanicilar.DataSource = ds.Tables[0];
             _connection.Close();
         }
+
+        private void txtKullaniciSifre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtKullanicilar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

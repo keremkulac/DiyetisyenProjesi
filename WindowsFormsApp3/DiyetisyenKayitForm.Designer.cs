@@ -29,11 +29,11 @@ namespace WindowsFormsApp3
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtKullaniciTelNo = new System.Windows.Forms.MaskedTextBox();
             this.txtKullaniciTcNo = new System.Windows.Forms.MaskedTextBox();
             this.lblTelNo = new System.Windows.Forms.Label();
@@ -67,7 +67,7 @@ namespace WindowsFormsApp3
             this.txtKullaniciTelNo.Location = new System.Drawing.Point(171, 191);
             this.txtKullaniciTelNo.Mask = "00000000000";
             this.txtKullaniciTelNo.Name = "txtKullaniciTelNo";
-            this.txtKullaniciTelNo.Size = new System.Drawing.Size(100, 29);
+            this.txtKullaniciTelNo.Size = new System.Drawing.Size(100, 35);
             this.txtKullaniciTelNo.TabIndex = 4;
             // 
             // txtKullaniciTcNo
@@ -75,7 +75,7 @@ namespace WindowsFormsApp3
             this.txtKullaniciTcNo.Location = new System.Drawing.Point(171, 143);
             this.txtKullaniciTcNo.Mask = "00000000000";
             this.txtKullaniciTcNo.Name = "txtKullaniciTcNo";
-            this.txtKullaniciTcNo.Size = new System.Drawing.Size(100, 29);
+            this.txtKullaniciTcNo.Size = new System.Drawing.Size(100, 35);
             this.txtKullaniciTcNo.TabIndex = 3;
             // 
             // lblTelNo
@@ -83,7 +83,7 @@ namespace WindowsFormsApp3
             this.lblTelNo.AutoSize = true;
             this.lblTelNo.Location = new System.Drawing.Point(19, 194);
             this.lblTelNo.Name = "lblTelNo";
-            this.lblTelNo.Size = new System.Drawing.Size(143, 21);
+            this.lblTelNo.Size = new System.Drawing.Size(182, 27);
             this.lblTelNo.TabIndex = 19;
             this.lblTelNo.Text = "Telefon Numarası";
             // 
@@ -92,7 +92,7 @@ namespace WindowsFormsApp3
             this.lblTC.AutoSize = true;
             this.lblTC.Location = new System.Drawing.Point(19, 146);
             this.lblTC.Name = "lblTC";
-            this.lblTC.Size = new System.Drawing.Size(116, 21);
+            this.lblTC.Size = new System.Drawing.Size(148, 27);
             this.lblTC.TabIndex = 17;
             this.lblTC.Text = "TC Kimlik No";
             // 
@@ -100,7 +100,7 @@ namespace WindowsFormsApp3
             // 
             this.txtKullaniciSoyad.Location = new System.Drawing.Point(171, 97);
             this.txtKullaniciSoyad.Name = "txtKullaniciSoyad";
-            this.txtKullaniciSoyad.Size = new System.Drawing.Size(121, 29);
+            this.txtKullaniciSoyad.Size = new System.Drawing.Size(121, 35);
             this.txtKullaniciSoyad.TabIndex = 2;
             // 
             // lblSoyad
@@ -108,7 +108,7 @@ namespace WindowsFormsApp3
             this.lblSoyad.AutoSize = true;
             this.lblSoyad.Location = new System.Drawing.Point(19, 100);
             this.lblSoyad.Name = "lblSoyad";
-            this.lblSoyad.Size = new System.Drawing.Size(58, 21);
+            this.lblSoyad.Size = new System.Drawing.Size(71, 27);
             this.lblSoyad.TabIndex = 15;
             this.lblSoyad.Text = "Soyad";
             // 
@@ -116,7 +116,7 @@ namespace WindowsFormsApp3
             // 
             this.txtKullaniciAd.Location = new System.Drawing.Point(171, 51);
             this.txtKullaniciAd.Name = "txtKullaniciAd";
-            this.txtKullaniciAd.Size = new System.Drawing.Size(121, 29);
+            this.txtKullaniciAd.Size = new System.Drawing.Size(121, 35);
             this.txtKullaniciAd.TabIndex = 1;
             // 
             // lblAd
@@ -124,7 +124,7 @@ namespace WindowsFormsApp3
             this.lblAd.AutoSize = true;
             this.lblAd.Location = new System.Drawing.Point(19, 54);
             this.lblAd.Name = "lblAd";
-            this.lblAd.Size = new System.Drawing.Size(33, 21);
+            this.lblAd.Size = new System.Drawing.Size(41, 27);
             this.lblAd.TabIndex = 12;
             this.lblAd.Text = "Ad";
             // 
@@ -132,7 +132,7 @@ namespace WindowsFormsApp3
             // 
             this.txtKullaniciID.Location = new System.Drawing.Point(135, 42);
             this.txtKullaniciID.Name = "txtKullaniciID";
-            this.txtKullaniciID.Size = new System.Drawing.Size(121, 29);
+            this.txtKullaniciID.Size = new System.Drawing.Size(121, 35);
             this.txtKullaniciID.TabIndex = 5;
             // 
             // label1
@@ -140,7 +140,7 @@ namespace WindowsFormsApp3
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 21);
+            this.label1.Size = new System.Drawing.Size(139, 27);
             this.label1.TabIndex = 22;
             this.label1.Text = "Kullanıcı Adı";
             // 
@@ -148,59 +148,62 @@ namespace WindowsFormsApp3
             // 
             this.txtKullaniciSifre.Location = new System.Drawing.Point(135, 85);
             this.txtKullaniciSifre.Name = "txtKullaniciSifre";
-            this.txtKullaniciSifre.Size = new System.Drawing.Size(121, 29);
+            this.txtKullaniciSifre.Size = new System.Drawing.Size(121, 35);
             this.txtKullaniciSifre.TabIndex = 6;
+            this.txtKullaniciSifre.TextChanged += new System.EventHandler(this.txtKullaniciSifre_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 21);
+            this.label2.Size = new System.Drawing.Size(57, 27);
             this.label2.TabIndex = 24;
             this.label2.Text = "Şifre";
             // 
             // dtKullanicilar
             // 
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            this.dtKullanicilar.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            this.dtKullanicilar.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtKullanicilar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dtKullanicilar.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtKullanicilar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtKullanicilar.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtKullanicilar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtKullanicilar.ColumnHeadersHeight = 29;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtKullanicilar.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtKullanicilar.Location = new System.Drawing.Point(12, 336);
             this.dtKullanicilar.Name = "dtKullanicilar";
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtKullanicilar.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtKullanicilar.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dtKullanicilar.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
-            this.dtKullanicilar.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            this.dtKullanicilar.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dtKullanicilar.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dtKullanicilar.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.dtKullanicilar.Size = new System.Drawing.Size(855, 105);
             this.dtKullanicilar.TabIndex = 27;
+            this.dtKullanicilar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtKullanicilar_CellContentClick);
             // 
             // groupBox1
             // 
@@ -245,7 +248,7 @@ namespace WindowsFormsApp3
             this.lblKaydet.AutoSize = true;
             this.lblKaydet.Location = new System.Drawing.Point(201, 145);
             this.lblKaydet.Name = "lblKaydet";
-            this.lblKaydet.Size = new System.Drawing.Size(63, 21);
+            this.lblKaydet.Size = new System.Drawing.Size(82, 27);
             this.lblKaydet.TabIndex = 7;
             this.lblKaydet.Text = "Kaydet";
             this.lblKaydet.Click += new System.EventHandler(this.lblKaydet_Click);
@@ -292,13 +295,13 @@ namespace WindowsFormsApp3
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label4.Location = new System.Drawing.Point(206, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(472, 36);
+            this.label4.Size = new System.Drawing.Size(583, 46);
             this.label4.TabIndex = 41;
             this.label4.Text = "DİYETİSYEN BİLGİLERİ KAYIT";
             // 
             // DiyetisyenKayitForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.black_material_ui_background_by_ministerkraft_dddraqt_fullview;

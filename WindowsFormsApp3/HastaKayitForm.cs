@@ -12,6 +12,8 @@ namespace WindowsFormsApp3
 {
     public partial class HastaKayitForm : Form
     {
+        HastaKayit eklenecekHasta = new HastaKayit();
+        long MevcutHastaTC;
         HastalarVeriTabani hastaKayit = new HastalarVeriTabani();
         HastaKayit hasta = new HastaKayit();
         DiyetFabrikasi diyetFabrika = new DiyetFabrikasi();
@@ -56,21 +58,20 @@ namespace WindowsFormsApp3
             DiyetFabrikasi diyetFabrika = new DiyetFabrikasi();
             IDiyet diyet = diyetFabrika.diyetOlustur(hasta.HastalikAdi);
 
-            hastaKayit.HastaEkle(new HastaKayit()
-            {
-                HastalikAdi = cmbHastalikAd.Text,
-                Ad = txtAd.Text,
-                Soyad = txtSoyad.Text,
-                Yas = Convert.ToInt32(txtYas.Text),
-                Kilo = Convert.ToInt32(txtKilo.Text),
-                TC = Convert.ToInt64(txtTC.Text),
-                TelNo = Convert.ToInt64(txtTelNo.Text),
-                DiyetTipi = diyet.DiyetVer(),
-               
-                Tarih = dateTimePicker1.Value.ToString("MM/dd/yyyy")
-            });
+            eklenecekHasta.HastalikAdi = cmbHastalikAd.Text;
+            eklenecekHasta.Ad = txtAd.Text;
+            eklenecekHasta.Soyad = txtSoyad.Text;
+            eklenecekHasta.Yas = Convert.ToInt32(txtYas.Text);
+            eklenecekHasta.Kilo = Convert.ToInt32(txtKilo.Text);
+            eklenecekHasta.TC = Convert.ToInt64(txtTC.Text);
+            eklenecekHasta.TelNo = Convert.ToInt64(txtTelNo.Text);
+            eklenecekHasta.DiyetTipi = diyet.DiyetVer();
+            eklenecekHasta.Tarih = dateTimePicker1.Value.ToString("MM/dd/yyyy");
+            MevcutHastaTC = eklenecekHasta.TC;
+            hastaKayit.HastaEkle(eklenecekHasta);
             temizle();
             MessageBox.Show("Kayıt başarılı...");
+
         }
 
         private void lblRaporVer_Click(object sender, EventArgs e)
@@ -78,6 +79,45 @@ namespace WindowsFormsApp3
             this.Close();
             HastaRaporVer hastaRapor = new HastaRaporVer();
             hastaRapor.Show();
+        }
+        public List<string> ListeAl()
+        {
+            List<string> diyetList = new List<string>();
+            diyetList.Add(MevcutHastaTC.ToString());
+            diyetList.Add(richTextBox1.Text);
+            diyetList.Add(richTextBox2.Text);
+            diyetList.Add(richTextBox3.Text);
+            richTextBox1.Clear();
+            richTextBox2.Clear();
+            richTextBox3.Clear();
+            return diyetList;
+        }
+        private void lblDevamEt_Click(object sender, EventArgs e)
+        {
+            label5.Visible = true;
+            richTextBox2.Visible = true;
+            lblDevamEt2.Visible = true;
+            pctrDevamEt2.Visible = true;
+        }
+
+        private void lblDevamEt2_Click(object sender, EventArgs e)
+        {
+            label6.Visible = true;
+            richTextBox3.Visible = true;
+            pctrKaydet.Visible = true;
+            lblOgunKaydet.Visible = true;
+        }
+
+        private void lblOgunKaydet_Click(object sender, EventArgs e)
+        {
+            DiyetFabrikasi diyetFabrika = new DiyetFabrikasi();
+            IDiyet diyet = diyetFabrika.diyetOlustur(hasta.HastalikAdi);
+            diyet.DiyetOgun(ListeAl());
+        }
+
+        private void HastaKayitForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

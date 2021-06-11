@@ -50,7 +50,7 @@ namespace WindowsFormsApp3
             this.lblDosyaTuru.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblDosyaTuru.Location = new System.Drawing.Point(45, 281);
             this.lblDosyaTuru.Name = "lblDosyaTuru";
-            this.lblDosyaTuru.Size = new System.Drawing.Size(103, 21);
+            this.lblDosyaTuru.Size = new System.Drawing.Size(131, 27);
             this.lblDosyaTuru.TabIndex = 42;
             this.lblDosyaTuru.Text = "Dosya Türü:";
             // 
@@ -62,7 +62,7 @@ namespace WindowsFormsApp3
             "JSON"});
             this.cmbDosyaTuru.Location = new System.Drawing.Point(154, 273);
             this.cmbDosyaTuru.Name = "cmbDosyaTuru";
-            this.cmbDosyaTuru.Size = new System.Drawing.Size(120, 29);
+            this.cmbDosyaTuru.Size = new System.Drawing.Size(120, 35);
             this.cmbDosyaTuru.TabIndex = 41;
             // 
             // dtHastalar
@@ -74,6 +74,7 @@ namespace WindowsFormsApp3
             this.dtHastalar.RowTemplate.Height = 24;
             this.dtHastalar.Size = new System.Drawing.Size(876, 168);
             this.dtHastalar.TabIndex = 46;
+            this.dtHastalar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtHastalar_CellContentClick);
             this.dtHastalar.SelectionChanged += new System.EventHandler(this.dtHastalar_SelectionChanged);
             // 
             // pictureBox3
@@ -94,7 +95,7 @@ namespace WindowsFormsApp3
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Location = new System.Drawing.Point(386, 281);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 21);
+            this.label1.Size = new System.Drawing.Size(109, 27);
             this.label1.TabIndex = 48;
             this.label1.Text = "Rapor Ver";
             this.label1.Click += new System.EventHandler(this.lblRaporVer_Click);
@@ -131,13 +132,13 @@ namespace WindowsFormsApp3
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(160)))), ((int)(((byte)(197)))));
             this.label4.Location = new System.Drawing.Point(284, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(346, 36);
+            this.label4.Size = new System.Drawing.Size(444, 46);
             this.label4.TabIndex = 51;
             this.label4.Text = "HASTA RAPORU ALMA";
             // 
             // HastaRaporVer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.black_material_ui_background_by_ministerkraft_dddraqt_fullview;
             this.ClientSize = new System.Drawing.Size(914, 338);

@@ -22,12 +22,17 @@ namespace WindowsFormsApp3
 
         private void lblGirisYap_Click(object sender, EventArgs e)
         {
+            GirisYap();
+        }
+
+        void GirisYap()
+        {
             string kullaniciAdi = txtKullaniciID.Text;
             string sifre = txtSifre.Text;
             _connection.Open();
-            
-             SqlDataAdapter komut = new SqlDataAdapter("select * from Kullanicilar where KullaniciID = '" + kullaniciAdi + "' and KullaniciSifre='" + sifre + "'", _connection);
-           // SqlDataAdapter komut = new SqlDataAdapter("SELECT * FROM ogrenci", _connection);
+
+            SqlDataAdapter komut = new SqlDataAdapter("select * from Kullanicilar where KullaniciID = '" + kullaniciAdi + "' and KullaniciSifre='" + sifre + "'", _connection);
+            // SqlDataAdapter komut = new SqlDataAdapter("SELECT * FROM ogrenci", _connection);
             DataTable dt = new DataTable();
             komut.Fill(dt);
             // string kullaniciTur = dt.Rows[0]["KullaniciTur"].ToString();
@@ -64,6 +69,12 @@ namespace WindowsFormsApp3
             else
                 MessageBox.Show("Kullanıcı adı ya da şifre yanlış");
             _connection.Close();
+
+        }
+
+        private void GirisForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

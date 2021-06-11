@@ -12,6 +12,6 @@ namespace WindowsFormsApp3
 
         string DiyetVer();
         //// SortedList<string, string> SabahOgun();
-       
+        void DiyetOgun(List<string> Diyet);
     }
 }
