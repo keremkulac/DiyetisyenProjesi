@@ -74,7 +74,6 @@ namespace WindowsFormsApp3
             this.dtHastalar.RowTemplate.Height = 24;
             this.dtHastalar.Size = new System.Drawing.Size(876, 168);
             this.dtHastalar.TabIndex = 46;
-            this.dtHastalar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtHastalar_CellContentClick);
             this.dtHastalar.SelectionChanged += new System.EventHandler(this.dtHastalar_SelectionChanged);
             // 
             // pictureBox3

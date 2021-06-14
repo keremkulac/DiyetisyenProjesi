@@ -10,6 +10,8 @@ namespace WindowsFormsApp3
 {
     public class Yesillik : IDiyet
     {
+
+        //Veritabanı bağlantıları
         static VeriTabani connect = new VeriTabani();
         public static SqlConnection _connection = new SqlConnection(connect.BaglantiAdresi);
 
@@ -32,6 +34,7 @@ namespace WindowsFormsApp3
             return "Yeşillik";
         }
 
+        //Interface'i kullanarak istenen öğünleri veritabanına ekleyen method
 
         void IDiyet.DiyetOgun(List<string> Diyet)
         {

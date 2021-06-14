@@ -2,8 +2,9 @@
 using System.Data;
 using System.Windows.Forms;
 using System.IO;
-using Newtonsoft.Json;
 using System.Collections;
+using Newtonsoft.Json;
+
 using System.Collections.Generic;
 
 namespace WindowsFormsApp3
@@ -22,9 +23,10 @@ namespace WindowsFormsApp3
 
         private void HastaRaporVer_Load(object sender, EventArgs e)
         {
-            HastalariCek();
+            HastalariCek(); //Load'ta hastalari çektik.
         }
-        public void HastaOgunleriniCek()
+        //Hasta öğünlerini foreach kullanarak tek tek tablodan alıp list'e aktardık.
+        public void HastaOgunleriniCek() 
         {
 
             DataSet ds = hastalarinOgunleri.HastaOgunleriCek(secilenHastaOzellikleri[6]);
@@ -37,7 +39,8 @@ namespace WindowsFormsApp3
             }
 
         }
-
+       
+        //Sınıf üzerinden dataset döndüren methodu kullanarak hastalara eriştik.
         public void HastalariCek()
         {
             DataSet veriler = hastaKayitlari.HastaCek();
@@ -46,7 +49,9 @@ namespace WindowsFormsApp3
 
         public void HastalariJsonKaydet()
         {
-            HastaCekRapor hasta = new HastaCekRapor //HastaCek
+            //Json serialize işlemi yaparak hasta bilgilerini json kaydeden fonksiyon.
+            //Kütüphane olarak Newtonsoft.json kullanılmıştır.
+            HastaKayit hasta = new HastaKayit //Hasta
             {
 
                 Ad = secilenHastaOzellikleri[1],
@@ -67,8 +72,10 @@ namespace WindowsFormsApp3
             File.WriteAllText(@secilenHastaOzellikleri[1] + ".json", json);
         }
 
+        //Hastaları HTML kaydeden fonksiyon.
         public void HastalariHtmlKaydet()
         {
+            //Listeden hasta özelliklerine erişip bu özellikleri kullanarak HTML kaydı oluşturur.
             string hastaadi = secilenHastaOzellikleri[1];
             string exePath =
         System.IO.Path.GetDirectoryName(
@@ -92,9 +99,8 @@ namespace WindowsFormsApp3
             sw.WriteLine("<b> Öğlen Öğünü: </b> " + arrayList[2].ToString() + "<br>");
             sw.WriteLine("<b> Akşam Öğünü: </b> " + arrayList[3].ToString() + "<br>");
             sw.WriteLine("<center> <hr> <b> RAPORU ÇIKTI ALMAK İÇİN CTRL+P YAPABİLİRSİNİZ. GEÇMİŞ OLSUN.  </b> </hr> </center> ");
-            //Dosyaya ekleyeceğimiz iki satırlık yazıyı WriteLine() metodu ile yazacağız.
             sw.Flush();
-            //Veriyi tampon bölgeden dosyaya aktardık.
+            //Veriyi dosyaya aktardık.
             sw.Close();
             fs.Close();
         }
@@ -139,9 +145,6 @@ namespace WindowsFormsApp3
             hastaKayit.Show();
         }
 
-        private void dtHastalar_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
     }
 }

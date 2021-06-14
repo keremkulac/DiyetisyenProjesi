@@ -150,7 +150,6 @@ namespace WindowsFormsApp3
             this.txtKullaniciSifre.Name = "txtKullaniciSifre";
             this.txtKullaniciSifre.Size = new System.Drawing.Size(121, 35);
             this.txtKullaniciSifre.TabIndex = 6;
-            this.txtKullaniciSifre.TextChanged += new System.EventHandler(this.txtKullaniciSifre_TextChanged);
             // 
             // label2
             // 
@@ -203,7 +202,6 @@ namespace WindowsFormsApp3
             this.dtKullanicilar.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.dtKullanicilar.Size = new System.Drawing.Size(855, 105);
             this.dtKullanicilar.TabIndex = 27;
-            this.dtKullanicilar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtKullanicilar_CellContentClick);
             // 
             // groupBox1
             // 

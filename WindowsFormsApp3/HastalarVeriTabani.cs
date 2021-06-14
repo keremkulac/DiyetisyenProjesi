@@ -20,11 +20,11 @@ namespace WindowsFormsApp3
                 _connection.Open();
             }
         }
+        //Alınan HastaKayit türünden objeyi veritabanına ekler.
         public void HastaEkle(HastaKayit hasta)
         {
             ConnectionControl();
-            //SqlDataAdapter sqlEkle = new SqlDataAdapter(" insert into(HastaAdi, HastaSoyad, HastaHastalikTipi,HastaYas, HastaKilo, HastaTC, HastaTelNo, HastaDiyet, HastaDiyetTarih) values('"+ hasta.Ad + "','" + hasta.Soyad + "','" + hasta.HastalikAdi + "','" + hasta.Yas + "','" + hasta.Kilo + "','" + hasta.TC + "','" + hasta.TelNo + "','" + hasta.DiyetTipi + "','" + hasta.Tarih + "')", _connection);
-            //sqlEkle.SelectCommand.ExecuteNonQuery();       
+               
             SqlCommand command = new SqlCommand(
              "INSERT into  Hastalar values(@HastaAdi,@HastaSoyad,@HastaHastalikTipi,@HastaYas,@HastaKilo,@HastaTC,@HastaTelNo,@HastaDiyet,@HastaDiyetTarih)", _connection);
             command.Parameters.AddWithValue("@HastaAdi", hasta.Ad);

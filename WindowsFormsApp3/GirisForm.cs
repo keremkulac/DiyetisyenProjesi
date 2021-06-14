@@ -24,7 +24,7 @@ namespace WindowsFormsApp3
         {
             GirisYap();
         }
-
+        //veritabanına giriş yapma kontrolünü sağlayan fonksiyon.
         void GirisYap()
         {
             string kullaniciAdi = txtKullaniciID.Text;
@@ -32,11 +32,9 @@ namespace WindowsFormsApp3
             _connection.Open();
 
             SqlDataAdapter komut = new SqlDataAdapter("select * from Kullanicilar where KullaniciID = '" + kullaniciAdi + "' and KullaniciSifre='" + sifre + "'", _connection);
-            // SqlDataAdapter komut = new SqlDataAdapter("SELECT * FROM ogrenci", _connection);
             DataTable dt = new DataTable();
             komut.Fill(dt);
-            // string kullaniciTur = dt.Rows[0]["KullaniciTur"].ToString();
-            //  MessageBox.Show(kullaniciTur);
+
             if (dt.Rows.Count == 1)
             {
                 switch (dt.Rows[0]["KullaniciTur"] as string)
@@ -61,7 +59,6 @@ namespace WindowsFormsApp3
                         }
                     default:
                         {
-                            // ... handle unexpected roles here...
                             break;
                         }
                 }
@@ -72,10 +69,7 @@ namespace WindowsFormsApp3
 
         }
 
-        private void GirisForm_Load(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }
 

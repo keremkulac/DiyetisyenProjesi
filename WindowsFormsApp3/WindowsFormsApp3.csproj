@@ -95,7 +95,6 @@
     <Compile Include="GirisForm.Designer.cs">
       <DependentUpon>GirisForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="HastaCekRapor.cs" />
     <Compile Include="HastalarVeriTabani.cs" />
     <Compile Include="IDiyet.cs" />
     <Compile Include="GlutenFree.cs" />

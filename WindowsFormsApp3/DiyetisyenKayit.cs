@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp3
 {
+    //Diyetisyen eklemek için kullanılan sınıf. 
     class DiyetisyenKayit
     {
 

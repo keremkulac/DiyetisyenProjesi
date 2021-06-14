@@ -19,6 +19,8 @@ namespace WindowsFormsApp3
                 _connection.Open();
             }
         }
+        //Bu method, kullanıcıdan aldığı diyetisyen objesini veritabanına ekler.
+
         public void DiyetisyenEkle(DiyetisyenKayit diyetisyen)
         {
             ConnectionControl();
@@ -31,7 +33,9 @@ namespace WindowsFormsApp3
             command.Parameters.AddWithValue("@KullaniciSoyad", diyetisyen.Soyad);
             command.Parameters.AddWithValue("@KullaniciTC", diyetisyen.TC);
             command.Parameters.AddWithValue("@KullaniciTelNo", diyetisyen.TelNo);
+             
             command.ExecuteNonQuery();
+            System.Windows.Forms.MessageBox.Show("Başarıyla eklendi!");
             _connection.Close();
         }
     }

@@ -14,6 +14,7 @@ namespace WindowsFormsApp3
 
     public partial class DiyetisyenKayitForm : Form
     {
+        
         DiyetisyenVeriTabani diyetisyenKayit = new DiyetisyenVeriTabani();
         DiyetisyenKayit diyetisyen = new DiyetisyenKayit();
         static VeriTabani connect = new VeriTabani();
@@ -49,6 +50,7 @@ namespace WindowsFormsApp3
 
         private void lblKaydet_Click(object sender, EventArgs e)
         {
+            //Diyetisyeni veritabanına ekler.
             diyetisyenKayit.DiyetisyenEkle(new DiyetisyenKayit()
             {
                 KullaniciAdi = txtKullaniciAd.Text,
@@ -60,7 +62,10 @@ namespace WindowsFormsApp3
                 Tur = "Diyetisyen"
             });
 
+            KullanicilariCek();
+
         }
+        //Bu fonksiyon, gereken kullanicilari sınıfı kullanarak çeker
         void KullanicilariCek()
         {
             ConnectionControl();
@@ -72,14 +77,6 @@ namespace WindowsFormsApp3
             _connection.Close();
         }
 
-        private void txtKullaniciSifre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtKullanicilar_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+      
     }
 }

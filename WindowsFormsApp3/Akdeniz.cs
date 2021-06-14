@@ -11,9 +11,10 @@ namespace WindowsFormsApp3
 
     public class Akdeniz : IDiyet
     {
+        //Veritabanı bağlantıları
         static VeriTabani connect = new VeriTabani();
         public static SqlConnection _connection = new SqlConnection(connect.BaglantiAdresi);
-
+        //Bağlantı açık mı kontrolü
         public void ConnectionControl()
         {
             if (_connection.State == ConnectionState.Closed)
@@ -31,6 +32,7 @@ namespace WindowsFormsApp3
             return "Akdeniz";
         }
 
+        //Interface'i kullanarak istenen öğünleri veritabanına ekleyen method
         void IDiyet.DiyetOgun(List<string> Diyet)
         {
             ConnectionControl();

@@ -8,18 +8,10 @@ namespace WindowsFormsApp3
 {
     class HastaKayit
     {
-        public string ad;
-        public string Ad
-        {
-            get { return ad; }
-            set { ad = value.ToUpper(); }
-        }
-        public string soyad;
-        public string Soyad
-        {
-            get { return soyad; }
-            set { soyad = value.ToUpper(); }
-        }
+        //Hasta için gereken sınıf.
+        public string Ad { get; set; }
+        public string Soyad { get; set; }
+
         public string HastalikAdi { get; set; }
         public int Yas { get; set; }
         public int Kilo { get; set; }

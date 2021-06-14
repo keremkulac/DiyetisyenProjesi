@@ -10,8 +10,7 @@ namespace WindowsFormsApp3
     {
 
 
-        string DiyetVer();
-        //// SortedList<string, string> SabahOgun();
-        void DiyetOgun(List<string> Diyet);
+        string DiyetVer(); //Interface için gereken method, hastaya gereken diyet tipini verir.
+         void DiyetOgun(List<string> Diyet); //Ogunler için gereken liste
     }
 }

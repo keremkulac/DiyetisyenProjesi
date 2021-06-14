@@ -12,6 +12,7 @@ namespace WindowsFormsApp3
 {
     public partial class HastaKayitForm : Form
     {
+        //Gereken objeleri sınıflar üzerinden oluşturduk.
         HastaKayit eklenecekHasta = new HastaKayit();
         long MevcutHastaTC;
         HastalarVeriTabani hastaKayit = new HastalarVeriTabani();
@@ -21,6 +22,7 @@ namespace WindowsFormsApp3
         {
             InitializeComponent();
         }
+
         void temizle()
         {
             cmbHastalikAd.Text = "";
@@ -54,7 +56,10 @@ namespace WindowsFormsApp3
 
         private void lblKaydet_Click(object sender, EventArgs e)
         {
+            //Kayıtlı hastaları çekiyoruz.
             HastaKayitAl();
+            
+            //Diyet fabrıkası üzerinden interface kullanarak veritabanına kayıt yapan fonksiyon.
             DiyetFabrikasi diyetFabrika = new DiyetFabrikasi();
             IDiyet diyet = diyetFabrika.diyetOlustur(hasta.HastalikAdi);
 
@@ -77,7 +82,7 @@ namespace WindowsFormsApp3
         private void lblRaporVer_Click(object sender, EventArgs e)
         {
             this.Close();
-            HastaRaporVer hastaRapor = new HastaRaporVer();
+            HastaRaporVer hastaRapor = new HastaRaporVer(); 
             hastaRapor.Show();
         }
         public List<string> ListeAl()
@@ -110,14 +115,11 @@ namespace WindowsFormsApp3
 
         private void lblOgunKaydet_Click(object sender, EventArgs e)
         {
+            //Ogunleri fabrika kullanarak kaydediyoruz.
             DiyetFabrikasi diyetFabrika = new DiyetFabrikasi();
             IDiyet diyet = diyetFabrika.diyetOlustur(hasta.HastalikAdi);
             diyet.DiyetOgun(ListeAl());
         }
 
-        private void HastaKayitForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
