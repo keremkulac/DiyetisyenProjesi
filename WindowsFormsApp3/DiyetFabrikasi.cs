@@ -30,7 +30,6 @@ namespace WindowsFormsApp3
             {
                 diyet = new Akdeniz();
 
-
             }
             return diyet;
         }
