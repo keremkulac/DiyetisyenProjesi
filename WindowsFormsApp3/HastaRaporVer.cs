@@ -46,7 +46,7 @@ namespace WindowsFormsApp3
 
         public void HastalariJsonKaydet()
         {
-            HastaKayit hasta = new HastaKayit //HastaCek
+            HastaCekRapor hasta = new HastaCekRapor //HastaCek
             {
 
                 Ad = secilenHastaOzellikleri[1],
